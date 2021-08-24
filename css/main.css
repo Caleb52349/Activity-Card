@@ -1,0 +1,130 @@
+body {
+  background: #d5e4e4;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #191b26;
+}
+
+p {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  line-height: 1.2rem;
+}
+
+main {
+  max-width: 1600px;
+}
+main .container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(1366px / 2);
+  height: calc(880px / 2);
+  border-radius: 15px;
+  background: white;
+}
+main .container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 15px 0 0 15px;
+}
+main .container .description {
+  margin: 50px 50px;
+}
+main .container .description .btn {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 170px 170px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
+}
+main .container .description .btn a {
+  font-size: 0.6em;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  border: 1px solid #d6d5e4;
+  justify-content: center;
+  align-items: center;
+  color: #191b26;
+  font-weight: 600;
+  padding: 12px 12px;
+}
+main .container .description .btn a:last-child {
+  background: linear-gradient(#10bab6, #006d6f);
+}
+main .container .description .btn a:last-child:hover {
+  opacity: 0.85;
+}
+main .container .description .btn a:hover {
+  background: linear-gradient(#10bab6, #006d6f);
+}
+main .container .description .btn a:hover img {
+  z-index: 100;
+}
+main .container .description .btn a span img {
+  position: relative;
+  left: 20px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: calc(1366px / 1.5) !important;
+    height: calc(880px / 1.5) !important;
+  }
+}
+@media (min-width: 1280px) {
+  .description {
+    margin-top: 100px !important;
+    margin-left: auto;
+    width: 60%;
+  }
+  .description .btn {
+    margin-top: 70px !important;
+    grid-template-columns: calc(450px/2) calc(450px/2) !important;
+  }
+  .description .btn span img {
+    position: relative;
+    left: 20px;
+  }
+  .description h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+  .description p {
+    font-size: 1rem;
+    line-height: 1.7rem !important;
+  }
+}
+@media (max-width: 735px) {
+  .container {
+    margin-top: 15rem !important;
+    width: 300px !important;
+    height: calc(1450px /1.2) !important;
+    flex-direction: column;
+  }
+  .container img {
+    max-width: 100% !important;
+    display: block;
+    border-radius: 15px 15px 0 0 !important;
+  }
+
+  .description .btn {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .description h1 {
+    font-size: 2.5ch;
+    text-align: left;
+  }
+  .description p {
+    text-align: left;
+    padding: 0.4ch;
+  }
+}/*# sourceMappingURL=main.css.map */
