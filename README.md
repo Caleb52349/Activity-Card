@@ -11,7 +11,7 @@
  ## Code Challenges 
  Uidesign is a platform which uploads ui design of various projects everyday. i took it to a challenge to pick ui design each day and build a fully reponsive website out of the Ui design  given in the website 
  
- Site Link : Uidesign- https://www.uidesigndaily.com/posts/xd-%3Cspreshw
+ Site Link : Uidesign- https://www.uidesigndaily.com/
  
  -----------------------------------------------------------------------------------------------------
  ## Preview of Website
